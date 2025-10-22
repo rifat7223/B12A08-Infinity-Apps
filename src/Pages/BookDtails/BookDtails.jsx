@@ -24,7 +24,7 @@ const BookDtails = () => {
         addStoreInstall(id)
     }
     return (
-        <div className='m-15'>
+        <div className='m-10'>
             <div className='flex gap-10'>
                 <div>
                     <img className='w-60 bg-white shadow' src={image} alt="" />
