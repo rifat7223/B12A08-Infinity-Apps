@@ -4,7 +4,10 @@ import down from "../../assets/icon-downloads.png"
 import rat from "../../assets/icon-ratings.png"
 import { addStoreInstall } from '../../Utility/Install';
 import Spiner from '../../Components/Spiner/Spiner';
+import Chart from '../../Components/Chart/Chart';
+
 const BookDtails = () => {
+    
     const {id}=useParams()
    const BookStr=parseInt(id)
     const data=useLoaderData()
@@ -54,7 +57,9 @@ const BookDtails = () => {
              <div>
                     <p>Descriptoon:{description}</p>
                 </div>
-              
+             <div>
+                <Chart></Chart>
+             </div>
         </div>
     );
 };

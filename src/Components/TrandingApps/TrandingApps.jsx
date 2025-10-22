@@ -9,7 +9,7 @@ const TrandingApps = ({data}) => {
             <div className='grid grid-cols-3 max-w-10/12 mx-auto gap-10 '>
        
             {
-                data.map(appData=><TrendingApp appData={appData}></TrendingApp>)
+                data.map(appData=><TrendingApp key={appData.id} appData={appData}></TrendingApp>)
             }
         </div>
         <div className='text-center mt-5'>
