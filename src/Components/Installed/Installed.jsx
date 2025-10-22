@@ -4,7 +4,7 @@ const Installed = ({ins}) => {
     console.log(ins)
     const {image,downloads,title,ratingAvg}=ins
     return (
-        <div className=' bg-white shadow flex items-center justify-between  mt-5 p-5 '>
+        <div className=' bg-white shadow flex items-center justify-between m-1  md:mt-5 p-1md:p-5 '>
             <div className='flex items-center'>
             <div>
                 <img className='w-20' src={image} alt="" />
@@ -20,7 +20,7 @@ const Installed = ({ins}) => {
     
         </div>
         <div>
-            <button class="btn btn-primary">Uninstall</button>
+            <button class="btn btn-primary ">Uninstall</button>
         </div>
 
         </div>

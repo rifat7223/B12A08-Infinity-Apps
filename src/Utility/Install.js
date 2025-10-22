@@ -1,3 +1,5 @@
+
+  import { ToastContainer, toast } from 'react-toastify';
 const getStoreInstall=()=>{
 const storeInstallStr= localStorage.getItem("install");
 if(storeInstallStr){
@@ -17,7 +19,8 @@ else{
 const addStoreInstall=(id)=>{
 const storeInstallData=getStoreInstall();
 if(storeInstallData.includes(id)){
-    alert("already exist")
+   
+   toast.warning("⚠️ Already installed!");
 }
 else{
     storeInstallData.push(id);

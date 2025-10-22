@@ -6,9 +6,9 @@ const TrendingApp = ({appData}) => {
     const{image,title,description,downloads,ratingAvg}=appData
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-sm  transition duration-300 ease-in-out hover:scale-105 hover:shadow mt-10">
+            <div className=" h-64 object-cover card bg-base-100  shadow-sm  transition duration-300 ease-in-out hover:scale-105 hover:shadow mt-5 md:mt-10">
   <figure>
-    <img className='w-50'
+    <img className='w-40 md:w-50'
       src={image}
       alt="Shoes" />
   </figure>

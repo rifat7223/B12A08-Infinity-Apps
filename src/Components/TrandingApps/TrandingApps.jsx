@@ -6,7 +6,7 @@ const TrandingApps = ({data}) => {
     // console.log(data)
     return (
         <div>
-            <div className='grid grid-cols-3 max-w-10/12 mx-auto gap-10 '>
+            <div className='grid grid-cols-1 md:grid-cols-3 max-w-10/12 mx-auto gap-2 md:gap-10  '>
        
             {
                 data.map(appData=><TrendingApp key={appData.id} appData={appData}></TrendingApp>)

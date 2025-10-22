@@ -20,46 +20,48 @@ const BookDtails = () => {
     
     const handleInstall=(id)=>{
            setButtonText('Instaled');
-           alert("install")
+           
         addStoreInstall(id)
     }
     return (
         <div className='m-10'>
-            <div className='flex gap-10'>
+            <div className='flex gap-10 '>
                 <div>
-                    <img className='w-60 bg-white shadow' src={image} alt="" />
+                    <img className='w-80 bg-white shadow' src={image} alt="" />
                 </div>
                 <div>
                     <div>
                     <h1 className='text-3xl font-bolds'>{title}</h1>
                     <p>Developed by{companyName}</p>
                 </div>
-                <div className='border-t-2 w-5xl m-2'></div>
-              <div className='flex gap-10 mt-5'>
+                <div className='border-t-2 md:w-5xl m-2'></div>
+              <div className='flex gap-10 items-center mt-5'>
                   <div>
                     <img src={down} alt="" />
-                    <p>downloads</p>
-                    <p>{downloads}</p>
+                    <p className='hidden md:block'>downloads</p>
+                    <p className='hidden md:block'>{downloads}</p>
                     </div>
                 <div>
                     <img className='' src={rat} alt="" />
-                  <p>  ratings</p>
-                    <p>{ratingAvg}</p></div>
+                  <p className='hidden md:block'>  ratings</p>
+                    <p className='hidden md:block'>{ratingAvg}</p></div>
               </div>
                <div className='mt-5'>
+              
                 <button onClick={()=>handleInstall(id)} className="btn btn-primary"> {buttonText}</button>
                </div>
                 
                 </div>
                
             </div>
-             <div className='border-t-2 max-w-7xl'></div>
-             <div>
-                    <p>Descriptoon:{description}</p>
-                </div>
+             <div className='border-t-2 md:max-w-7xl mt-5'></div>
+             
              <div>
                 <Chart></Chart>
              </div>
+             <div>
+                    <p>Descriptoon:{description}</p>
+                </div>
         </div>
     );
 };
